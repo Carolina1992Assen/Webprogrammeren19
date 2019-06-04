@@ -1,0 +1,22 @@
+footer {
+    padding: 20px;
+    background-color: #ECEDEE;
+}
+
+.wp-row {
+    margin: 100px 0 100px 0;
+}
+
+.assignment {
+    color: red;
+}
+
+#form-content {
+    display: none;
+}
+
+#form-alert {
+    display: none;
+}
+
+.focused { outline: 1px solid red; }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <
+
+
+    <link rel="stylesheet" href=“bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="main.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">WP19</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Assignment 2</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <div class="row wp-row">
+        <div class="col-md-6">
+            <h1>Contact Form</h1>
+            <p>Please enter your name, age, city, Email address and phone number. We'll contact you for more information.</p>
+            <div class="alert alert-danger" id="form-alert" role="alert">
+            </div>
+            <h3 class="assignment"
+            <form id="form">
+                <div class="form-group" id="n">
+                    <label id="namelabel" for="name">Name:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group" id="a">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" id="age">
+                </div>
+                <div class="form-group" id="c">
+                    <label for="city">City:</label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+                <div class="form-group" id="e">
+                    <label for="email">email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group" id="p">
+                    <label for="pn">Phone Number:</label>
+                    <input type="number" class="form-control" id="pn">
+                </div>
+                <button id="sb" class="button">Submit</button>
+                <button id="eb" class="button">Erase</button>
+            </form>
+            </h3>
+
+
+        </div>
+        <div class="col-md-6">
+            <div id="form-content">
+                <table class="table table-hover">
+                    <tbody>
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td>Reinard</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Age</th>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">City</th>
+                        <td>Groningen</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">E-mailadres</th>
+                        <td>r.g.van.dalen@rug.nl</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Phone number</th>
+                        <td>+31612345678</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="link-tab" href="#links">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" href="#contact">Contact</a>
+        </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane active" id="links">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="contact">
+            <p>
+                Address 1<br>
+                1111 ZZ Place<br>
+                Country
+            </p>
+        </div>
+    </div>
+
+    <script src="main.js">
+
+        window.addEventLisener('load', function() {
+            console.log('Document Object Model has been loaded.');
+        } );
+
+    </script >
+
+</footer>
+</body>
+</html>
